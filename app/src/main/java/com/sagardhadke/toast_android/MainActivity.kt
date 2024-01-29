@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
+import com.sagardhadke.toast_android.Utils.myToast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         textView.setOnClickListener {
             Toast.makeText(this, "Testing Default Toast", Toast.LENGTH_SHORT).show()
+
+            myToast.custToast(this,"Sagar")
+            
         }
 
     }
